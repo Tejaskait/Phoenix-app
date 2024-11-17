@@ -3,3 +3,15 @@
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
+
+@font-face {
+    font-family: "Regular";
+    src: local("NeueMontreal-Regular"),
+    url('./assets/fonts/NeueMontreal-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Semibold";
+    src: local("FoundersGrotesk-Semibold"),
+    url('./assets/fonts/FoundersGrotesk-Semibold.ttf') format("truetype");
+}

@@ -5,7 +5,12 @@ export default {
     './src/**/*.{html,jsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        nmregular:['Regular'],
+        fgsemibold:['Semibold']
+      }
+    },
   },
   plugins: [],
 }
