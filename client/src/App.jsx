@@ -8,9 +8,11 @@ import Careers from './pages/Careers';
 import Profile from './pages/Profile';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
+import Header from './components/Header';
 
 export default function App() {
   return <BrowserRouter>
+  <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
@@ -20,7 +22,7 @@ export default function App() {
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/ourservices" element={<OurServices />} />
-        <Route path="/carrers" element={<Careers />} />
+        <Route path="/careers" element={<Careers />} />
       </Routes>
     </BrowserRouter>;
 }
