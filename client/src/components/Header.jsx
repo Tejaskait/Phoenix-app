@@ -5,37 +5,35 @@ export default function Header() {
   return (
     <header className="bg-transparent flex w-full px-8 py-4 bg-white shadow-md items-center justify-between">
       {/* Logo Section */}
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-1">
         <Link to="/">
           <img
-            src="src/components/phoenix-logo-1.png"
+            src="src/components/phoenix-logo.png"
             alt="Logo"
-            style={{ height: "60px", width: "60px" }}
+            style={{ height: "30px", width: "30px" }}
           />
         </Link>
-        <h1 className="text-lg font-fgsemibold tracking-wide text-black">PHOENIX</h1>
+        <h1 className="text-3xl sm:inline font-fgsemibold tracking-wide text-[#F16128] hover:text-black transition-colors duration-300">PHOENIX</h1>
       </div>
 
       {/* Navigation Section */}
       <nav>
-        <ul className="flex gap-5 text-sm font-nmregular text-gray-700">
+        <ul className="flex gap-3 text-sm font-nmregular text-gray-700">
           <Link to="/">
-            <li className="hover:underline">HOME</li>
+            <li className="hidden sm:inline hover:underline">HOME</li>
           </Link>
-          <Link to="/aboutus">
-            <li className="hover:underline">ABOUT US</li>
-          </Link>
+          
           <Link to="/contactus">
-            <li className="hover:underline">CONTACT US</li>
+            <li className="hidden sm:inline hover:underline">CONTACT US</li>
           </Link>
           <Link to="/resources">
-            <li className="hover:underline">RESOURCES</li>
+            <li className=" hidden sm:inline hover:underline">WELFARE</li>
           </Link>
           <Link to="/careers">
-            <li className="hover:underline">CAREERS</li>
+            <li className=" hidden sm:inline hover:underline">CAREERS</li>
           </Link>
           <Link to="/ourservices">
-            <li className="hover:underline">OUR SERVICES</li>
+            <li className="hidden sm:inline hover:underline">OUR SERVICES</li>
           </Link>
           <Link to="/sign-in">
             <li className="hover:underline text-black">SIGN IN</li>

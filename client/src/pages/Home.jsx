@@ -1,39 +1,47 @@
-import React from 'react';
+import React from "react";
+import { GiEvilWings } from "react-icons/gi";
+import Maerquee from "../components/Maerquee";
+import About from "../components/about";
 
 export default function Home() {
   return (
-    <div className="w-full h-screen flex flex-col justify-between border-t-2 bg-white">
-      {/* Main Content Section */}
-      <div className="flex flex-col items-start justify-center px-10 py-20">
-        <h1
-          className="font-fgsemibold text-[72px] leading-[1.1] tracking-tight"
-          style={{
-            letterSpacing: '-0.02em', // Adjusts kerning for a clean look
-            lineHeight: '80px', // Matches the vertical spacing
-          }}
-        >
-          WE CREATE <br />
-          EYE-OPENING <br />
-          SOLUTIONS
-        </h1>
-        
-      </div>
-
-      {/* Footer Section */}
-      <div className="flex justify-between items-center w-full px-10 py-4 border-t text-sm font-nmregular">
-        <p className="text-[16px] leading-[24px]">For public and private companies</p>
-        <p className="text-[16px] leading-[24px]">From the first pitch to IPO</p>
-        <div>
-        <button
-          className="flex items-center gap-2 border rounded-full px-6 py-3 text-sm font-nmregular hover:bg-gray-100 transition-all duration-300"
-          style={{ fontSize: '14px', lineHeight: '20px' }}
-        >
-          START THE PROJECT
-          <span>➔</span>
-          </button>
+    <div className="w-full h-screen bg-white pt-1">
+      <div className=" hidden sm:inline justify-between items-center">
+        <div className="font-fgsemibold  h-3 w-full  text-8xl">
+          <div className=" text-[#F16128] hover:text-[#004D43] transition-colors duration-300  px-80 py-30">
+            <div className="px-10">WELCOME</div>
+          </div>
+          <div className="px-80">
+            <div className="px-56 hover:text-[#F16128] transition-colors duration-300 ">
+              <GiEvilWings />
+            </div>
+          </div>
         </div>
-       
       </div>
+      <div className="mt-60 "></div>
+      <div className="textstructure mt-60  px-3">
+        <div className="masker">
+          <h1 className=" text-6xl leading-[.75] tracking-tighter font-fgsemibold">
+            we CREATE
+          </h1>
+        </div>
+        <div className="masker flex items-center gap-1 ">
+          <div className="mr-[.75vw] w-[6vw] rounded-md h-[3vw] -top-[.7vw]  bg-[#F16128] hover:bg-red-300 transition-colors duration-300"></div>
+          <h1 className=" text-6xl  tracking-tighter leading-[.95] font-fgsemibold">
+            eye-opening
+          </h1>
+        </div>
+        <div className="masker"></div>
+        <div className="masker">
+          <h1 className=" text-[9vw] leading-[.95] tracking-tighter font-fgsemibold">
+            SOLUTION'S
+          </h1>
+        </div>
+      </div>
+      <div className=""></div>
+      <Maerquee />
+      <About />
     </div>
+    
   );
 }

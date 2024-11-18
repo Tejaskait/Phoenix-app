@@ -11,7 +11,8 @@ import ContactUs from './pages/ContactUs';
 import Header from './components/Header';
 
 export default function App() {
-  return <BrowserRouter>
+  return <BrowserRouter >
+  
   <Header />
       <Routes>
         <Route path="/" element={<Home />} />
