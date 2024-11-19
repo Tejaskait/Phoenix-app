@@ -35,12 +35,14 @@ export default function Header() {
           <Link to="/ourservices">
             <li className="hidden sm:inline hover:underline">OUR SERVICES</li>
           </Link>
-          
+          <Link to="/sign-in">
+            <li className="hidden sm:inline hover:underline text-black">SIGN IN</li>
+          </Link>
         </ul>
       </nav>
 
       {/* Search Section */}
-      <form className="bg-gray-100 p-2 rounded-lg flex items-center gap-2">
+      <form className=" bg-gray-100 p-2 rounded-lg flex items-center gap-2">
         <input
           type="text"
           placeholder="SEARCH"

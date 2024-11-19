@@ -1,11 +1,13 @@
-import React from 'react'
-import Maerqueesignup from '../components/Marqueesignup'
+import { useState } from 'react'
+import Maerqueesignup from '../components/Marqueesignup';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 
 
 export default function SignUp() {
+
+ 
   return (
     <div className='w-full  bg-[#004D43]'>
       <div className='py-8 text-white'>
@@ -18,9 +20,9 @@ export default function SignUp() {
       </div>
       <form className=' py-8 '>
         <div className='flex items-center flex-col gap-5 '>
-        <input type='text' placeholder='username' className='bg-[#ffffff] placeholder:px-4 rounded-md placeholder:text-black' id='username'  />
-        <input type='text' placeholder='email' className='bg-[#ffffff] placeholder:px-4 rounded-md placeholder:text-black' id='useremail'  />
-        <input type='text' placeholder='password' className='bg-[#ffffff] placeholder:px-4 rounded-md placeholder:text-black' id='userpassword'  />
+        <input type='text' placeholder='. . . . . .  username . . . . .' className='bg-[#ffffff] placeholder:px-4 rounded-md opacity-70 border p-5 font-nmregular placeholder:text-black' id='username'  />
+        <input type='email' placeholder='. . . . . .  email . . . . .' className='bg-[#ffffff] placeholder:px-4 rounded-md opacity-70 border p-5 font-nmregular placeholder:text-black' id='useremail'  />
+        <input type='password' placeholder='. . . . . .  password . . . . .' className='bg-[#ffffff] placeholder:px-4 rounded-md opacity-70 border p-5 font-nmregular placeholder:text-black' id='userpassword' />
         <button className="flex gap-5 items-center font-nmregular px-10 py-6 bg-zinc-900 rounded-full tracking-tighter mt-5 text-white ">
             
               <li className=" uppercase hover:underline">SIGN UP</li>
