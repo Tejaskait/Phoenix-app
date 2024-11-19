@@ -20,7 +20,7 @@ export default function Header() {
       <nav>
         <ul className="flex gap-3 text-sm font-nmregular text-gray-700">
           <Link to="/">
-            <li className="hidden sm:inline hover:underline">HOME</li>
+            <li className="  hover:underline">HOME</li>
           </Link>
           
           <Link to="/contactus">
@@ -36,7 +36,7 @@ export default function Header() {
             <li className="hidden sm:inline hover:underline">OUR SERVICES</li>
           </Link>
           <Link to="/sign-in">
-            <li className="hover:underline text-black">SIGN IN</li>
+            <li className="hidden sm:inline hover:underline text-black">SIGN IN</li>
           </Link>
         </ul>
       </nav>
