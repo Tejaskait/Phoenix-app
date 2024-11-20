@@ -6,7 +6,9 @@ import { Link,useNavigate } from 'react-router-dom';
 
 
 export default function SignUp() {
-  const [formData,setFormData] =useState({})
+  const [formData,setFormData] =useState({});
+  const [error, setError] = useState(null);
+  const [loading ,setLoading] = useState(false);
   const navigate = useNavigate();
 const handleChange=(e)=>{
   setFormData({
@@ -16,7 +18,9 @@ const handleChange=(e)=>{
 };
 const handleSubmit= async(e)=>{
   e.preventDefault();
-  const res = await fetch('http://localhost:3000/api/auth/signup',{
+  try {
+    setLoading(true);
+  const res = await fetch('/api/auth/signup',{
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -25,7 +29,21 @@ const handleSubmit= async(e)=>{
   });
   const data = await res.json();
   console.log(data);
-  navigate('/sign-in');
+  if (data.success === false) {
+    setLoading(false);
+    setError(data.message);
+  
+    return;
+  }
+  setLoading(false);
+  setError(null);
+  } catch (error) {
+    setLoading(false);
+    setError(error.message);
+  }
+  
+ 
+  navigate('/sign-in');  
   
 }
  console.log(formData);
@@ -55,6 +73,7 @@ const handleSubmit= async(e)=>{
         </h1>
         </div>
       </form>
+      {error && <p className='font-nmregular text-red-500 mt-5'>{error}</p>}
       <Maerqueesignup/>
     </div>
   )
