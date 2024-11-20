@@ -16,7 +16,7 @@ const handleChange=(e)=>{
 };
 const handleSubmit= async(e)=>{
   e.preventDefault();
-  const res = await fetch('/api/auth/signup',{
+  const res = await fetch('http://localhost:3000/api/auth/signup',{
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -26,6 +26,7 @@ const handleSubmit= async(e)=>{
   const data = await res.json();
   console.log(data);
   navigate('/sign-in');
+  
 }
  console.log(formData);
   return (
