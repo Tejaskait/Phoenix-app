@@ -73,7 +73,13 @@ const handleSubmit= async(e)=>{
         </h1>
         </div>
       </form>
-      {error && <p className='font-nmregular text-red-500 mt-5'>{error}</p>}
+      <div className='justify-center items-center flex  '>
+      {error && <p  className='uppercase   bg-slate-100  border px-5 opacity-70 font-nmregular  text-[1.5vw] text-red-600 rounded-lg mb-5'>{error}</p>}
+      <h1 className=''>
+
+      </h1>
+      
+      </div>
       <Maerqueesignup/>
     </div>
   )
