@@ -10,7 +10,7 @@ export default function Header() {
           <img
             src="src/components/phoenix-logo.png"
             alt="Logo"
-            style={{ height: "30px", width: "30px" }}
+            style={{ height: "60px", width: "60px" }}
           />
         </Link>
         <h1 className="text-3xl sm:inline font-fgsemibold tracking-wide text-[#F16128] hover:text-black transition-colors duration-300">PHOENIX</h1>
