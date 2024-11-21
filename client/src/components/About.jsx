@@ -63,7 +63,7 @@ export default function About() {
         <div className="hidden sm:inline w-1/2 h-[70vh] rounded-2xl ">
           <img
             src="/src/components/ami.png"
-            style={{ height: "281px", width: "265px" }}
+            style={{ height: "500px", width: "478px" }}
           ></img>
           
         
