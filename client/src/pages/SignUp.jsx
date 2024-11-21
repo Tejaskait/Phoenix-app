@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Maerqueesignup from '../components/Marqueesignup';
 import { motion } from 'framer-motion';
 import { Link,useNavigate } from 'react-router-dom';
+import OAuth from '../components/OAuth';
 
 
 
@@ -71,7 +72,9 @@ const handleSubmit= async(e)=>{
         <h1 className=' '>
 
         </h1>
+        <OAuth/>
         </div>
+
       </form>
       <div className='justify-center items-center flex  '>
       {error && <p  className='uppercase   bg-slate-100  border px-5 opacity-70 font-nmregular  text-[1.5vw] text-red-600 rounded-lg mb-5'>{error}</p>}

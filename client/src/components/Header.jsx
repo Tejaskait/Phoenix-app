@@ -17,8 +17,9 @@ export default function Header() {
       </div>
 
       {/* Navigation Section */}
-      <nav>
-        <ul className="flex gap-3 text-sm font-nmregular text-gray-700">
+      <nav className='
+      '>
+        <ul className="flex gap-3 px-10 justify-center items-center text-sm font-nmregular text-gray-700">
           <Link to="/">
             <li className="  hover:underline">HOME</li>
           </Link>

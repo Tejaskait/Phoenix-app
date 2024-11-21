@@ -14,7 +14,11 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true, 
         unique: true
-    }
+    },
+    avatar: {
+        type: String,
+        default: "/src/components/defalt.png"
+    },
 }, 
     {
         timestamps: true,

@@ -17,7 +17,7 @@ export default function About() {
         </h1>
       </h1>
       <h1 className="font-nmregular ">
-        {" "}
+       
         With over 500 skilled professionals, we specialize in delivering
         superior data management, IT product development, and innovation &
         digital transformation services.
@@ -33,7 +33,7 @@ export default function About() {
           <h1 className="text-[3vw] tracking-tight font-italic font-nmregular px-4 ">
             About Us :
           </h1>
-          <button className="flex gap-5 items-center font-nmregular px-10 py-6 bg-zinc-900 rounded-full tracking-tighter mt-5 text-white ">
+          <button className="flex gap-3  items-center font-nmregular px-5 py-6 bg-zinc-900 rounded-full tracking-tighter mt-5 text-white ">
             <Link to="/aboutus">
               <li className=" uppercase hover:underline">READ more</li>
             </Link>

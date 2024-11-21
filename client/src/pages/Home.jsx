@@ -6,13 +6,15 @@ import About from "../components/about";
 export default function Home() {
   return (
     <div className="w-full h-screen bg-white pt-1">
-      <div className=" hidden sm:inline justify-between items-center">
-        <div className="font-fgsemibold  h-3 w-full  text-8xl">
-          <div className=" text-[#F16128] hover:text-[#004D43] transition-colors duration-300  px-80 py-30">
-            <div className="px-10">WELCOME</div>
+      <div className="  ">
+        <div className="font-fgsemibold justify-center flex items-center h-3 w-full py-16 text-[6vw]">
+          <div className=" text-[#F16128] hover:text-[#004D43] transition-colors duration-300   py-30">
+            <div className="">WELCOME</div>
           </div>
-          <div className="px-80">
-            <div className="px-56 hover:text-[#F16128] transition-colors duration-300 ">
+        </div>
+        <div>
+        <div className="font-fgsemibold justify-center flex items-center h-3 w-full  text-[6vw]">
+            <div className=" hover:text-[#F16128] transition-colors duration-300 ">
               <GiEvilWings />
             </div>
           </div>
